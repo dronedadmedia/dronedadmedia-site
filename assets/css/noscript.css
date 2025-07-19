@@ -10,7 +10,7 @@
 
 	#wrapper {
 		background-color: #212931;
-		background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+		/*background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");*/
 		background-size: auto,								auto,														100% auto;
 		background-position: center,								center,														top center;
 		background-repeat: repeat,								no-repeat,													no-repeat;
@@ -20,6 +20,20 @@
 		#wrapper.fade-in:before {
 			display: none;
 		}
+
+/* Add styles for the background video */
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100; /* Ensures the video is behind other content */
+    background-size: cover;
+    overflow: hidden;
+}
 
 /* Intro */
 
