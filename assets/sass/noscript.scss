@@ -17,6 +17,7 @@
 
 	#wrapper {
 		background-color:		_palette(wrapper-bg);
+		/*background-image:		url('../../images/overlay.png'),	linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)),	url('../../images/bg.jpg');*/
 		background-image:		url('../../images/overlay.png'),	linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)),	url('../../images/bg.jpg');
 		background-size:		auto,								auto,														100% auto;
 		background-position:	center,								center,														top center;
@@ -29,6 +30,21 @@
 			}
 		}
 	}
+
+/* Add styles for the background video */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*min-width: 100%;
+    min-height: 100%;*/
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -100; /* Ensures the video is behind other content */
+    /*background-size: cover;*/
+    overflow: hidden;
+}
 
 /* Intro */
 
