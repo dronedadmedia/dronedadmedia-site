@@ -11,7 +11,8 @@
     <!-- Stylesheet derived from Tailwind CLI -->
     <!-- <link href="./dist/output.css" rel="stylesheet"> -->
     <!-- Google Fonts - Montserrat (Primary) -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet"></noscript>
     <!-- Google Fonts - Inter (Secondary) -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
@@ -113,7 +114,7 @@
                 Your browser does not support the video tag. High-quality aerial media services are available in Minnesota.
             </video>
             <!-- Overlay for text and gradient -->
-            <div class="absolute inset-0 bg-black-alpha60 flex flex-col items-center justify-center p-4 text-center">
+            <div class="absolute inset-0 bg-black bg-opacity-10 flex flex-col items-center justify-center p-4 text-center">
             <!-- <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center"> -->
                 <!-- New: Animated title -->
                 <h1 class="text-5xl md:text-7xl font-bold mb-4 drop-shadow-lg animated-title">Drone Dad Media</h1>
