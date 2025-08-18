@@ -42,7 +42,7 @@
             object-fit: cover;
             z-index: -1;
             /* New: Initial state for animation */
-            opacity: 0;
+            opacity: 0.01;
             animation: fadeIn 2s forwards;
             animation-delay: 0.5s;
         }
@@ -109,11 +109,12 @@
         <header class="relative h-full flex items-center justify-center text-white overflow-hidden">
             <!-- Video Background -->
             <video autoplay loop muted playsinline class="video-background">
-                <source src="/media/SiteIntro.mp4" type="video/mp4">
+                <source src="./media/SiteIntro.mp4" type="video/mp4">
                 Your browser does not support the video tag. High-quality aerial media services are available in Minnesota.
             </video>
             <!-- Overlay for text and gradient -->
-            <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center p-4 text-center">
+            <div class="absolute inset-0 bg-black-alpha60 flex flex-col items-center justify-center p-4 text-center">
+            <!-- <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center"> -->
                 <!-- New: Animated title -->
                 <h1 class="text-5xl md:text-7xl font-bold mb-4 drop-shadow-lg animated-title">Drone Dad Media</h1>
                 <!-- New: Animated subtitle -->

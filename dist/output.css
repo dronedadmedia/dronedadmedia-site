@@ -387,6 +387,13 @@
   .bg-black {
     background-color: var(--color-black);
   }
+  .bg-black-alpha60 {
+    background-color: rgba(0, 0, 0, 0.6);
+    --tw-bg-opacity: 0.6;
+  }
+  .bg-opacity-60 {
+    opacity: 0.6;
+  }
   .bg-blue-600 {
     background-color: var(--color-blue-600);
   }
