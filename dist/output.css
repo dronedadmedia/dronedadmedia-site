@@ -203,15 +203,15 @@
   .visible {
     visibility: visible;
   }
-  .absolute {
+  /*.absolute {
     position: absolute;
   }
-  .fixed {
+*/  .fixed {
     position: fixed;
   }
-  .relative {
+  /*.relative {
     position: relative;
-  }
+  }*/
   .static {
     position: static;
   }
@@ -320,9 +320,9 @@
   .w-16 {
     width: calc(var(--spacing) * 16);
   }
-  .w-\[95vw\] {
+  .w/*-\[95vw\] {
     width: 95vw;
-  }
+  }*/
   .w-full {
     width: 100%;
   }
