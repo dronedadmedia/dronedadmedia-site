@@ -6,7 +6,9 @@
   "scripts": {
     "init-tailwind": "tailwindcss init -p",
     "tailwind": "node node_modules/tailwindcss/lib/cli.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx @tailwindcss/cli -i ./input.css -o ./dist/style.css --minify",
+    "watch": "npx @tailwindcss/cli -i ./input.css -o ./dist/style.css --watch"
   },
   "repository": {
     "type": "git",
@@ -25,7 +27,7 @@
     "tailwindcss": "^4.1.12"
   },
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.12",
+    "@tailwindcss/cli": "^4.1.18",
     "browserslist": "^4.25.2",
     "caniuse-lite": "^1.0.30001735",
     "electron-to-chromium": "^1.5.204",
