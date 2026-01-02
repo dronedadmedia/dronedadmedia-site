@@ -7,6 +7,7 @@
 	<meta name="description" content="Capture spectacular aerial photos and videos with Drone Dad Media. We provide high-quality aerial media services throughout the south central Minnesota region.">
 	<title>Drone Dad Media - Aerial Photography & Video Services in Minnesota</title>
 	<link rel="icon" type="image/x-icon" href="/media/propeller.png">
+	<link rel="preload" as="image" href="./media/video-poster.webp" fetchpriority="high">
 	<!-- Tailwind CSS CDN -->
 	<!-- <script src="https://cdn.tailwindcss.com"></script> -->
 	<!-- Stylesheet derived from Tailwind CLI -->
@@ -66,7 +67,7 @@
 		<!-- Section 1: Intro/Title/Banner with Looping Video -->
 		<header class="relative h-full flex items-center justify-center text-white overflow-hidden">
 			<!-- Video Background -->
-			<video autoplay loop muted playsinline class="video-background">
+			<video autoplay loop muted playsinline poster="./media/video-poster.webp" class="video-background absolute inset-0 w-full h-full object-cover">
 				<source src="./media/SiteIntro.mp4" type="video/mp4">
 				Your browser does not support the video tag. High-quality aerial media services are available in Minnesota.
 			</video>
